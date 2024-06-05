@@ -1,10 +1,9 @@
 package com.service;
 
 import com.model.GlycemiaReading;
-
+import com.repository.GlycemiaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.repository.GlycemiaRepository;
 
 import java.util.List;
 import java.util.Optional;

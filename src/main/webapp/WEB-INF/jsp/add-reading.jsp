@@ -4,6 +4,8 @@
 <head>
     <title>Add Glycemia Reading</title>
 </head>
+
+
 <body>
 <h2>Add Glycemia Reading</h2>
 <form action="${pageContext.request.contextPath}/add" method="post">
@@ -12,9 +14,9 @@
     <label for="time">Time:</label>
     <input type="time" id="time" name="time" required/><br/>
     <label for="level">Level:</label>
-    <input type="number" step="0.01" id="level" name="level" required/><br/>
+    <input type="number" step="1" id="level" name="level" required/><br/>
     <label for="user">User ID:</label>
-    <input type="number" id="user" name="user.id" required/><br/>
+    <input type="number" id="user" name="user_id" required/><br/>
     <input type="submit" value="Add Reading"/>
 </form>
 <a href="${pageContext.request.contextPath}/">Back to Home</a>
