@@ -11,15 +11,19 @@ public class GlycemiaReading {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private long id;
+
     @Column(name = "date")
     private LocalDate date;
+
     @Column(name = "time")
     private LocalTime time;
+
     @Column(name = "level")
     private float level;
+
     @ManyToOne
     @JoinColumn(name = "user_id")
-    private com.model.User user;
+    private User user;
 
     public long getId() {
         return id;
@@ -53,11 +57,11 @@ public class GlycemiaReading {
         this.level = level;
     }
 
-    public com.model.User getUser() {
+    public User getUser() {
         return user;
     }
 
-    public void setUser(com.model.User user) {
+    public void setUser(User user) {
         this.user = user;
     }
 }
