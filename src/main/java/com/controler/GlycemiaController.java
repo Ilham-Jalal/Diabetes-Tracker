@@ -64,4 +64,11 @@ public class GlycemiaController {
         model.addAttribute("readings", readings);
         return "index";
     }
+    @GetMapping("/glucose-chart")
+    public String showGlucoseChart(Model model) {
+        List<GlycemiaReading> glucoseReadings = service.getAllReadings();
+        model.addAttribute("glucoseReadings", glucoseReadings);
+        return "chart-glucose";
+    }
 }
+

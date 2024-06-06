@@ -29,5 +29,4 @@ public class GlycemiaService {
     public List<GlycemiaReading> getAllReadings() {
         return repository.findAll();
     }
-
 }

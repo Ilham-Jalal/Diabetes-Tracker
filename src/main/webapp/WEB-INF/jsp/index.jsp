@@ -33,5 +33,6 @@
     </tbody>
 </table>
 <a href="${pageContext.request.contextPath}/add">Add New Reading</a>
+
 </body>
 </html>
