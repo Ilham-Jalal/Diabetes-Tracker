@@ -13,8 +13,9 @@ public class User {
     private String name;
     @Column(name = "email")
     private String email;
-    @Column(name = "password")
-    private String password;
+    @Column(name = "phone_number")
+    private String phone_number;
+
 
     public long getId() {
         return id;
@@ -40,11 +41,11 @@ public class User {
         this.email = email;
     }
 
-    public String getPassword() {
-        return password;
+    public String getPhoneNumber() {
+        return phone_number;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setPhone_number(String password) {
+        this.phone_number = password;
     }
 }
