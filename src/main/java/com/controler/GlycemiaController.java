@@ -25,6 +25,10 @@ public class GlycemiaController {
         this.service = service;
         this.userService = userService;
     }
+    @RequestMapping("/")
+    public String welcomehome(){
+        return "home";
+    }
 
     @GetMapping("/add")
     public String addReadingForm(Model model) {
@@ -58,7 +62,7 @@ public class GlycemiaController {
         return "redirect:/";
     }
 
-    @GetMapping
+    @GetMapping("/list")
     public String getAllReadings(Model model) {
         List<GlycemiaReading> readings = service.getAllReadings();
         model.addAttribute("readings", readings);
